@@ -1,0 +1,5 @@
+username: root
+packages:
+  - nano
+  - htop
+  - neofetch
