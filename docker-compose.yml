@@ -1,0 +1,42 @@
+services:
+  pihole:
+    container_name: pihole
+    hostname: pihole.copilot
+    image: pihole/pihole:latest
+    environment:
+      WEBTHEME: default-dark
+      TZ: Europe/London
+      WEBPASSWORD: Szxs234.
+    volumes:
+      - /opt/appdata/pihole:/etc/pihole/
+      - /opt/appdata/pihole/dnsmasq:/etc/dnsmasq.d/
+    ports:
+      - 53:53/tcp
+      - 53:53/udp
+      - 80:80/tcp
+    cap_add:
+      - NET_ADMIN
+    restart: always
+    networks:
+      - copilot
+
+  homepage:
+    container_name: homepage
+    hostname: homepage
+    image: ghcr.io/gethomepage/homepage:latest
+    environment:
+      PUID: $PUID
+      PGID: $PGID 
+    volumes:
+      - /opt/appdata/homepage:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    env_file: /opt/copilot/.env
+    ports:
+      - 85:3000
+    restart: always
+    networks:
+      - copilot
+
+networks:
+  copilot:
+    driver: bridge

@@ -1,0 +1,48 @@
+---
+title: Copilot Dashboard
+headerStyle: underlined
+
+background:
+  image: https://cdnb.artstation.com/p/assets/images/images/006/897/659/large/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg
+  blur:
+  saturate: 100
+  brightness: 50
+  opacity: 100
+favicon: https://images.squarespace-cdn.com/content/659067c6deda3f6229908685/edb1cab3-0eca-4ab0-ad89-24babb0a37a1/fav+white.png?content-type=image%2Fpng
+theme: dark
+color: slate
+useEqualHeights: true
+
+#providers:
+#  openweathermap: openweathermapapikey
+#  weatherapi: weatherapiapikey
+
+iconStyle: theme
+statusStyle: basic
+hideVersion: true
+hideErrors: true
+showStats: true
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  hideVisitURL: true
+logpath: /opt/appdata/homepage/
+
+layout:
+  Infrastructure and Data:
+    icon: mdi-server-#FFFFFF
+    style: column
+#    columns: 3
+  Management:
+    icon: mdi-auto-fix-#FFFFFF
+    style: column
+#    columns: 3
+  IoT and Smarthome:
+    icon: mdi-home-#FFFFFF
+    style: column
+#    columns: 3
+  Security and Identity:
+    icon: mdi-shield-lock-#FFFFFF
+    style: column
+#    columns: 4
+

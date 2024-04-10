@@ -1,0 +1,34 @@
+---
+- Repositories:
+    - Homelab:
+        - icon: si-github-#FFFFFF
+          href: https://github.com/cityplug/thincentre
+    - Cheat-Sheets:
+        - icon: si-github-#FFFFFF
+          href: https://github.com/christianlempa/cheat-sheets
+
+- Short Cuts:
+    - Youtube:
+        - icon: youtube.png
+          href: https://youtube.com/
+          siteMonitor: https://www.youtube.com/
+    - Youtube Music:
+        - icon: youtube-music
+          href: https://music.youtube.com/
+    - Anydesk:
+        - icon: https://static-00.iconduck.com/assets.00/anydesk-icon-2048x2048-1tqcckxw.png
+          href: https://anydesk.com/uk/downloads/thank-you?dv=win_exe
+
+- Links:
+    - Cloudflare:
+        - href: https://dash.cloudflare.com/
+        - icon: cloudflare.png
+    - Tailscale:
+        - icon: tailscale-light.png
+          href: https://login.tailscale.com/admin/machines
+    - O365:
+        - icon: microsoft-office.png
+          href: https://office.com/?auth=2&home=1
+    - Soccer Streams:
+        - icon: si-fifa
+          href: https://soccerlive.app/

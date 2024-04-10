@@ -1,0 +1,107 @@
+---
+- Infrastructure and Data:
+    - Proxmox:
+        icon: proxmox.png
+        href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+        description: Proxmox VE
+        siteMonitor: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+        widget:
+          type: proxmox
+          url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+          username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+          password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+          node: maas
+    - Truenas:
+        icon: truenas.png 
+        href: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+        description: Truenas Scale
+        siteMonitor: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+        widget:
+          type: truenas
+          url: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+          username: "{{HOMEPAGE_VAR_TRUENAS_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_TRUENAS_PASSWORD}}" 
+
+- Management:
+    - Unifi Portal:
+        icon: unifi.png 
+        href: https://unifi.ui.com/consoles
+        description: ... ...
+        siteMonitor: https://unifi.ui.com/consoles
+        widget:
+          type: unifi
+          url: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+          username: "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"
+    - Portainer:
+        icon: portainer.png 
+        href: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+        description: ... ...
+        siteMonitor: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+        container: portainer
+        widget:
+          type: portainer
+          url: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+          key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
+    - Microde:
+        icon: baserow.png 
+        href: "{{HOMEPAGE_VAR_MICRODE_URL}}"
+        description: Microde Pi Server
+        siteMonitor: "{{HOMEPAGE_VAR_MICRODE_URL}}"
+        widget:
+          type: unifi
+          url: "{{HOMEPAGE_VAR_MICRODE_NETWORK_URL}}"
+          username: "{{HOMEPAGE_VAR_MICRODE_NETWORK_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_MICRODE_NETWORK_PASSWORD}}"
+          site: 0B31XA - Baari # optional
+
+- IoT and Smarthome:
+    - Home Assistant:
+        icon: home-assistant-alt.png 
+        href: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
+        description: Home Automation Assistant
+        siteMonitor: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
+    - Nextcloud:
+        icon: nextcloud.png 
+        href: "{{HOMEPAGE_VAR_NEXTCLOUD_URL}}"
+        description: ... ... ...
+        siteMonitor: "{{HOMEPAGE_VAR_NEXTCLOUD_URL}}"
+        widget:
+          type: nextcloud
+          url: "{{HOMEPAGE_VAR_NEXTCLOUD_URL}}"
+          username: "{{HOMEPAGE_VAR_NEXTCLOUD_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_NEXTCLOUD_PASSWORD}}"
+
+- Security and Identity:
+    - Pihole:
+        icon: pi-hole.png 
+        href: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
+        description: DNS Server
+        siteMonitor: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
+        widget:
+          type: pihole
+          url: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
+          key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}"
+    - Cloudflared:
+        icon: cloudflare.png 
+        href: "{{HOMEPAGE_VAR_CLOUDFLARED_URL}}"
+        description: ... ...
+        siteMonitor:
+        container: maas_cloudflared
+    - Proxy Manager:
+        icon: nginx-proxy-manager.png 
+        href: "{{HOMEPAGE_VAR_PROXY_MANAGER_URL}}"
+        description: ... ...
+        siteMonitor: "{{HOMEPAGE_VAR_PROXY_MANAGER_URL}}"
+        container: nginx-pm
+        widget:
+          type: npm
+          url: "{{HOMEPAGE_VAR_PROXY_MANAGER_URL}}"
+          username: "{{HOMEPAGE_VAR_PROXY_MANAGER_USERNAME}}"
+          password: "{{HOMEPAGE_VAR_PROXY_MANAGER_PASSWORD}}"
+    - Netboot:
+        icon: netboot.png 
+        href: "{{HOMEPAGE_VAR_NETBOOT_URL}}"
+        description: ...
+        siteMonitor:
+        container: netboot
