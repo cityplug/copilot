@@ -19,7 +19,7 @@ services:
       - NET_ADMIN
     restart: always
     networks:
-      - copilot
+      - frontend
 
   homepage:
     container_name: homepage
@@ -27,17 +27,26 @@ services:
     image: ghcr.io/gethomepage/homepage:latest
     environment:
       PUID: $PUID
-      PGID: $PGID 
+      PGID: $PGID
     volumes:
       - /opt/appdata/homepage:/app/config
       - /var/run/docker.sock:/var/run/docker.sock:ro
     env_file: /opt/copilot/.env
+#    labels:
+#      - "traefik.enable=true"
+#      - "traefik.http.routers.homepage.rule=Host(`homepage.cityplug.io`)"
+#      - "traefik.http.routers.homepage.entrypoints=websecure"
+#      - "traefik.http.routers.homepage.tls=true"
+#      - "traefik.http.routers.homepage.tls.certresolver=copilot"
     ports:
       - 85:3000
     restart: unless-stopped
     networks:
-      - copilot
+      - frontend
+      - backend
 
 networks:
-  copilot:
-    driver: bridge
+  frontend:
+    external: true
+  backend:
+    external: true

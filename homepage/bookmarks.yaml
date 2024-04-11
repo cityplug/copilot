@@ -6,6 +6,9 @@
     - Cheat-Sheets:
         - icon: si-github-#FFFFFF
           href: https://github.com/christianlempa/cheat-sheets
+    - JimsGarage:
+        - icon: si-github-#FFFFFF
+          href: https://github.com/JamesTurland/JimsGarage
 
 - Short Cuts:
     - Youtube:
@@ -21,8 +24,8 @@
 
 - Links:
     - Cloudflare:
-        - href: https://dash.cloudflare.com/
         - icon: cloudflare.png
+          href: https://dash.cloudflare.com/
     - Tailscale:
         - icon: tailscale-light.png
           href: https://login.tailscale.com/admin/machines
