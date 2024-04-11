@@ -78,6 +78,7 @@
         href: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
         description: DNS Server
         siteMonitor: "{{HOMEPAGE_VAR_PIHOLE_URL}}"
+        container: pihole
         widget:
           type: pihole
           url: "{{HOMEPAGE_VAR_PIHOLE_URL}}"

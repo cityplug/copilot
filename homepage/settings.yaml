@@ -13,10 +13,6 @@ theme: dark
 color: slate
 useEqualHeights: true
 
-#providers:
-#  openweathermap: openweathermapapikey
-#  weatherapi: weatherapiapikey
-
 iconStyle: theme
 statusStyle: basic
 hideVersion: true
@@ -28,21 +24,18 @@ quicklaunch:
   hideVisitURL: true
 logpath: /opt/appdata/homepage/
 
+fiveColumns: true
 layout:
   Infrastructure and Data:
     icon: mdi-server-#FFFFFF
     style: column
-#    columns: 3
   Management:
     icon: mdi-auto-fix-#FFFFFF
     style: column
-#    columns: 3
   IoT and Smarthome:
     icon: mdi-home-#FFFFFF
     style: column
-#    columns: 3
   Security and Identity:
     icon: mdi-shield-lock-#FFFFFF
     style: column
-#    columns: 4
 
